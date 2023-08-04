@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/noche.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registro.css">
-    <link rel="stylesheet" href="css/agregar-produc.css ">
     <link rel="icon" href="/Img/icon-tab.png">
     <script src="https://kit.fontawesome.com/720e6c724e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +27,13 @@
             <div class="menu__superior">
                 <div class="menu__izq">
                         <div class="menu__item__logo__titulo">
-                            <a class="menu__a__clean" href="index.html">
+                            <a class="menu__a__clean" href="../index.html">
                             <p class="menu__item__logo__texto">Mini</p>
                             <p class="menu__item__logo__texto">Speeds</p>
                             </a>
                         </div>
                         <div class="menu__item__logo__imagen">
-                            <a class="menu__a__clean" href="index.html">
+                            <a class="menu__a__clean" href="../index.html">
                             <img class="menu__item__img" src="Img/Logo-1.png" title="Logo">
                             </a>
                         </div>
@@ -43,20 +44,15 @@
                 <div class="nada">  <div>
             <div>
         </header>
-        <div class="ap__form">
-            <form class="Login__form__ap" >
-                <h1 class="login__titulo">Agrega un producto</h1>
-                <input class="input__login" type="url" id="imglink" placeholder="URL de imagen" name="url" required>
-                <label class="imglbl label__ap" for="imglink">URL de imagen</label>
-
-                <input class="input__login" type="text" name="Categoria" id="lbl__cat" placeholder="Categoria" required>
-                <label  class="lbl__cat label__ap" for="lbl__cat">Categoria</label>
-                <input class="input__login" type="" name="nomprod" id="nomprod" placeholder="Nombre del producto" required>
-                <label  class="lbl__nompro label__ap" for="nomprod">Nombre del producto</label>
-                <input class="input__login" type="" name="precioprod" id="precio__producto" placeholder="Precio del producto" required>
-                <label  class="lbl__precio label__ap" for="precio__producto">Precio del producto</label>
-                <textarea class="ap__form__textarea input__login" id="prodcuto__mensaje" placeholder="descripcion del prodcuto" rows="4"></textarea>
-                <label  class="lbl__mensaje label__ap" for="prodcuto__mensaje">Mensaje</label>
+        <div class="Login__form__container">
+            <form class="Login__form" >
+                <h1 class="login__titulo">Iniciar Sesion</h1>
+                <input class="input__login" type="email" id="correo" placeholder="Escriba su Correo electrónico" required>
+                <label class="login__label__correo" for="correo">Escriba su Correo electrónico</label>
+                
+                <input class="input__login" type="text" name="contraseña" id="contraseña" placeholder="Esciba su Contraseña" required>
+                <label class="login__label__constrasena" for="contraseña">Esciba su Contraseña</label>
+            
                 <input class="login__boton" type="submit" value="Enviar">
             </form>
         </div>
@@ -69,6 +65,8 @@
                         <p class="rodapie__logo__texto">Speeds</p>
                     </div>
                 </div>
+               
+
                 <div class="rodapie__acerca">
                     <div class="rodapie__acerca__lista">
                         <p class="rodapie__acerca__lista__item">Quienes somos</p>
@@ -82,10 +80,10 @@
                 <form class="rodapie__contacto">
                     <h1 class="rodapie__contacto__titulo">Hable con nosotros</h1>
 
-                        <input class="rodapie__input rodapie__contacto__nombre" name="nombre" id="nombre" type="text" placeholder="Nombre">
+                        <input class="rodapie__input rodapie__contacto__nombre" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
                         <label class="rodapie__contacto__placeholder__nombre" for="nombre">Nombre</label>
                         
-                        <textarea id="mensaje" class="rodapie__contacto__mensaje rodapie__input" placeholder="Mensaje" rows="6" ></textarea>
+                        <textarea id="mensaje" class="rodapie__contacto__mensaje rodapie__input" placeholder="Mensaje" rows="6" required></textarea>
                         <label for="mensaje" class="rodapie__contacto__placeholder__mensaje">Mensaje</label>
                     <input class="rodapie__contacto__boton" type="submit" value="Enviar">
                 </form>
@@ -99,8 +97,7 @@
             </div>
             
         </div>
-    </div>    
-
+    </div>
+    <script src="js/test.js"></script>
 </body>
 </html>
-
