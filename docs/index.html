@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/registro.css">
-    <link rel="stylesheet" href="css/agregar-produc.css ">
     <link rel="icon" href="/Img/icon-tab.png">
     <script src="https://kit.fontawesome.com/720e6c724e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +24,13 @@
             <div class="menu__superior">
                 <div class="menu__izq">
                         <div class="menu__item__logo__titulo">
-                            <a class="menu__a__clean" href="../index.html">
+                            <a class="menu__a__clean" href="/paginas/index.html">
                             <p class="menu__item__logo__texto">Mini</p>
                             <p class="menu__item__logo__texto">Speeds</p>
                             </a>
                         </div>
                         <div class="menu__item__logo__imagen">
-                            <a class="menu__a__clean" href="../index.html">
+                            <a class="menu__a__clean" href="/paginas/index.html">
                             <img class="menu__item__img" src="Img/Logo-1.png" title="Logo">
                             </a>
                         </div>
@@ -40,25 +38,46 @@
                     <input class="menu__item__input" placeholder="Hoy quiero..."><i class="fa-solid fa-search"></i>
                 </div>
                 </div>
-                <div class="nada">  <div>
+                <div class="menu__der"><a class="menu__a__clean" href="/paginas/registro.html">Login</a><div>
             <div>
         </header>
-        <div class="ap__form">
-            <form class="Login__form__ap" >
-                <h1 class="login__titulo">Agrega un producto</h1>
-                <input class="input__login" type="url" id="imglink" placeholder="URL de imagen" name="url" required>
-                <label class="imglbl label__ap" for="imglink">URL de imagen</label>
-
-                <input class="input__login" type="text" name="Categoria" id="lbl__cat" placeholder="Categoria" required>
-                <label  class="lbl__cat label__ap" for="lbl__cat">Categoria</label>
-                <input class="input__login" type="" name="nomprod" id="nomprod" placeholder="Nombre del producto" required>
-                <label  class="lbl__nompro label__ap" for="nomprod">Nombre del producto</label>
-                <input class="input__login" type="" name="precioprod" id="precio__producto" placeholder="Precio del producto" required>
-                <label  class="lbl__precio label__ap" for="precio__producto">Precio del producto</label>
-                <textarea class="ap__form__textarea input__login" id="prodcuto__mensaje" placeholder="descripcion del prodcuto" rows="4"></textarea>
-                <label  class="lbl__mensaje label__ap" for="prodcuto__mensaje">Mensaje</label>
-                <input class="login__boton" type="submit" value="Enviar">
-            </form>
+        <div class="splash">
+            <div class="splash__gadient">
+                <div class="splash__container">
+                    <h1 class="splash__titulo">ESTE MES CREA TUS "CUSTOMS" Y OBTEN HASTA UN 33 % DE DESCUENTO</h1>
+                    <div class="splash__boton__bg"><a class="splash__boton" href="#">Conocer más</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="productos__vista__previa">
+            <div class="productos__tema">
+                <div class="productos__seccion__titulo">
+                    <h1 class="productos__titulo">Autos Rosados</h1>
+                    <div class="productos__titulo__barra__der">
+                        <a class="productos__vermas" href="/paginas/productos.html">Ver más
+                        <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="productos__cartas"> 
+                    <div class="productos__item">
+                        <img src="Img/500x500.png" alt="" class="productos__item__img">
+                        <h2 class="productos__item__titulo">Titulo</h2>
+                        <p class="productos__item__precio">$XX</p>
+                        <a class="productos__item__mas" href="#">Ver más</a>
+                    </div>
+                    <div class="productos__item">
+                        <img src="Img/500x500.png" alt="" class="productos__item__img">
+                        <h2 class="productos__item__titulo">Titulo</h2>
+                        <p class="productos__item__precio">$XX</p>
+                        <a class="productos__item__mas" href="#">Ver más</a>
+                    </div> <div class="productos__item">
+                        <img src="Img/500x500.png" alt="" class="productos__item__img">
+                        <h2 class="productos__item__titulo">Titulo</h2>
+                        <p class="productos__item__precio">$XX</p>
+                        <a class="productos__item__mas" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="rodapie__base">
             <div class="rodapie">
@@ -68,6 +87,7 @@
                         <p class="rodapie__logo__texto">Mini</p>
                         <p class="rodapie__logo__texto">Speeds</p>
                     </div>
+                    
                 </div>
                 <div class="rodapie__acerca">
                     <div class="rodapie__acerca__lista">
@@ -82,10 +102,10 @@
                 <form class="rodapie__contacto">
                     <h1 class="rodapie__contacto__titulo">Hable con nosotros</h1>
 
-                        <input class="rodapie__input rodapie__contacto__nombre" name="nombre" id="nombre" type="text" placeholder="Nombre">
+                        <input class="rodapie__input rodapie__contacto__nombre" name="nombre" id="nombre" type="text" placeholder="Nombre" required>
                         <label class="rodapie__contacto__placeholder__nombre" for="nombre">Nombre</label>
                         
-                        <textarea id="mensaje" class="rodapie__contacto__mensaje rodapie__input" placeholder="Mensaje" rows="6" ></textarea>
+                        <textarea id="mensaje" class="rodapie__contacto__mensaje rodapie__input" placeholder="Mensaje" rows="6" required></textarea>
                         <label for="mensaje" class="rodapie__contacto__placeholder__mensaje">Mensaje</label>
                     <input class="rodapie__contacto__boton" type="submit" value="Enviar">
                 </form>
@@ -99,8 +119,6 @@
             </div>
             
         </div>
-    </div>    
-
+    </div>
 </body>
 </html>
-
