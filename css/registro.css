@@ -1,0 +1,116 @@
+.nada{
+    height: 1rem;
+    width: 4rem;
+    padding: 8px 32px;
+}
+.Login__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 25%;
+    height: 250px;
+    margin: 0 37.5%;
+}
+.Login__form__container{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    transition: 500ms;
+}
+.login__titulo{
+    align-self: center;
+}
+/* .input__login:focus + .input__login::placeholder{
+    opacity: 0;
+} */
+.input__login{
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 10px -3px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 14px 5px 10px 5px ;
+}
+.input__login::placeholder{
+    /* color: var(--gris-texto-c);
+    font-family: var(--fuente-b); */
+    color: transparent;
+}
+.login__boton{
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg, rgba(0,99,113,1) 0%, rgba(1,61,109,1) 100%);
+    color: var(--blanco);
+    font-family: var(--fuente-b);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 400ms;
+}
+.login__boton:active{
+    transform: scale(.94);
+    color: gray;
+}
+.login__titulo{
+    color: var(--gris-texto-f);
+    font-family: var(--fuente-b);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.login__label__correo{
+    position: absolute;
+    margin: 48px 0 0 5px;
+    font-family: var(--fuente-b);
+    color: var(--gris-texto-c);
+    font-weight: 500;
+    transition: all 200ms;
+}
+.input__login:focus + .login__label__correo{
+    margin-top: 38px;
+    font-size: .75rem;
+}
+.input__login:not(:placeholder-shown) + .login__label__correo{
+    margin-top: 38px;
+    font-size: .75rem;
+}
+.login__label__constrasena{
+    position: absolute;
+    margin: 102px 0 0 5px;
+    font-family: var(--fuente-b);
+    color: var(--gris-texto-c);
+    font-weight: 500;
+    transition: all 200ms;
+}
+.input__login:focus + .login__label__constrasena{
+    margin-top: 92px;
+    font-size: .75rem;
+}
+.input__login:not(:placeholder-shown) + .login__label__constrasena{
+    margin-top: 92px;
+    font-size: .75rem;
+}
+/* .modo__noche{
+    opacity: .2;
+    transition: all 600ms;
+}
+.modo__noche__boton{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+} */
+@media screen and (max-width:768px) {
+    .Login__form{
+        width: 55%;
+        margin:  0 22.5%;
+    }
+    .login__boton{
+        width: 35%;
+        align-self: center;
+    }
+}
+@media screen and (max-width:425px) {
+    .Login__form{
+        width: 90%;
+        margin: 0 5%;
+    }
+   
+}

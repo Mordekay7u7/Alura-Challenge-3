@@ -1,0 +1,447 @@
+:root{
+    --gris-1:#f5f5f5;
+    --cyan:rgb(1,112,115);
+    --cyan-light:rgb(0, 191, 197);
+    --cyan-light:rgba(0, 191, 197, 0.5);
+    --azul-logo:rgb(0,50,107);
+    --gris-texto-f:#464646;
+    --gris-texto-c:#a2a2a2;
+    --blanco:white;
+    --azul-10: #EAF2FD;
+    --fuente-a:'tektur',open-sans;
+    --fuente-b:'Quicksand', sans-serif;
+    --fuente-Log:'Press Start 2P',cursive;
+}
+.todo{
+    background-color: white;
+    font-size: 16px;
+}
+/* Busqueda */
+.menu__superior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu__izq{
+    display: flex;
+    gap: 32px;
+    width: 40%;
+}
+
+.encabezado{
+    padding:30px 0;
+    align-items: center;
+    border-bottom: solid 2px #faf7f7;
+}
+.menu__item__busqueda{
+    background-color: var(--gris-1);
+    padding: 7px 10px;
+    border-radius: 25px;
+    width: 95%;
+    
+}
+.menu__item__input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.menu__item__input::placeholder{
+    font-family: var(--fuente-a);
+}
+.menu__item__logo{
+    display: flex;
+    align-items: center;
+}
+.menu__item__img{
+    width: 80px;
+    opacity: 76%;
+    transform: scale(1.25);
+}
+.menu__item__logo__texto{
+    color: var(--cyan);
+    font-size: 25px;
+    font-family:var(--fuente-Log);
+
+}
+.menu__item__logo__imagen{
+    transform:translate(-30px,0px);
+
+}
+
+.menu__item__busqueda{
+    display: flex;
+    align-items: center;
+}
+
+.menu__der a{
+    text-decoration: none;
+    color: var(--azul-logo);
+    font-size: 1.25em;
+    padding: 8px 32px;
+    border: solid 2px var(--azul-logo);
+    font-family: var(--fuente-a);
+}
+.menu__a__clean{
+    text-decoration: none;
+
+}
+/* LandScape */
+
+.splash{
+    background-image: url(../Img/Cars-Wallpp.jpg);
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 400px;
+    display:flex;
+}
+.splash__container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom:60px ;
+}
+.splash__gadient{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 1%, rgba(1,1,11,0.4906337535014006) 45%, rgba(115,0,255,0) 100%);    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.splash__titulo{
+    font-family: "Tektur",cursive;
+    color: #f5f5f5;
+    font-size: 2.5rem;
+}
+.splash__boton{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: var(--fuente-a);
+    padding: 4px 8px;
+    color: var(--blanco);
+    border-radius: 3px;
+    background-clip: border-box;
+    background-color: var(--cyan-light);
+}
+/* .splash__boton__bg{
+    background-color:ghostwhite ;
+    width: 20%;
+} */
+
+/* Area de productos */
+
+.productos__vista__previa{
+    width: 75%;
+    margin: 64px 12.5%;
+    display: flex;
+    flex-direction:column ;
+    gap:64px;
+}
+.productos__item{
+    width: 20%;
+}
+.productos__item__img{
+    width: 100%;
+}
+.productos__tema{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+}
+.productos__cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.productos__seccion__titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.productos__titulo{
+    font-family: var(--fuente-b);
+    font-weight: 500;
+}
+.productos__vermas{
+    font-family: var(--fuente-b);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--azul-logo);
+}
+.productos__item__titulo{
+    font-family: var(--fuente-b);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.productos__item__precio{
+    font-size: 1.25rem;
+    font-family: var(--fuente-b);
+}
+.productos__item__mas{
+    font-family: var(--fuente-b);
+    text-decoration: none;
+    font-size: .9rem;
+}
+.productos__item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+/* rodapie */
+
+.rodapie{
+    width: 75%;
+    height: 250px;
+    display: flex;
+    gap: 7.5%;
+    margin: 1px 12.4%;
+}
+.rodapie__base{
+    background-color: var(--azul-10);
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.rodapie__logo{
+    width: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+.rodapie__logo__img{
+    width: 65px;
+}
+.rodapie__logo__texto{
+    font-size: 1rem;
+    color: var(--cyan);
+    font-family: var(--fuente-Log);
+}
+
+.rodapie__acerca{
+    width: 20%;
+    height: 100%;
+    
+}
+.rodapie__acerca__lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.rodapie__acerca__lista__item{
+    font-family: var(--fuente-b);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* rodapie contaco */
+.rodapie__contacto{
+    display: flex;
+    flex-direction: column;
+    gap:9px;
+    width: 50%;
+}
+.rodapie__contacto__boton{
+    width: 35%;
+    height: 40px;
+}
+.rodapie__contacto__mensaje{
+    max-height: 90px;
+    height: 50px;
+    max-width: 99.4%;
+}
+.rodapie__contacto__titulo{
+    font-family: var(--fuente-b);
+}
+.rodapie__input{
+    background-color:var(--blanco);
+    outline: none;
+    border: none;
+    padding: 15px 0 2.5px 5px;
+    height: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px -3px rgba(0,0,0,0.75);
+    transition: 300ms;
+
+}
+
+.rodapie__input::placeholder{
+    color: transparent;
+}
+.rodapie__contacto__placeholder__nombre{
+    position: absolute;
+    margin:38px 0 0 5px;
+    font-family: var(--fuente-b);
+    cursor: text;
+    transition:200ms;
+}
+.rodapie__contacto__placeholder__mensaje{
+    position: absolute;
+    margin: 83px 0 0 5px;
+    font-family: var(--fuente-b);
+    cursor: text;
+
+    transition: 200ms;
+}
+.rodapie__input:not(:placeholder-shown) + .rodapie__contacto__placeholder__nombre{
+    font-size: .8rem;
+    margin-top: 28px;
+}
+.rodapie__input:not(:placeholder-shown) + .rodapie__contacto__placeholder__mensaje{
+    font-size: .8rem;
+    margin-top: 73px;
+}
+.rodapie__input:focus + .rodapie__contacto__placeholder__nombre{
+    font-size: .8rem;
+    margin-top: 28px;
+}
+.rodapie__input:focus + .rodapie__contacto__placeholder__mensaje{
+    font-size: .8rem;
+    margin-top: 73px;
+}
+.rodapie__contacto__boton{
+    background: linear-gradient(90deg, rgba(0,99,113,1) 0%, rgba(1,80,111,1) 25%, rgba(1,61,109,1) 100%);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--fuente-b);
+    font-size: 1.2rem;
+    color: var(--blanco);
+    transition: all 200ms;
+}
+.rodapie__contacto__boton:active{
+    transform: scale(.94);
+    color: gray;
+}
+
+/* creditoa */
+.creditos{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.creditos__contenedor{
+    width: 75%;
+    margin: 0 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.creditos__texto{
+    font-family: var(--fuente-b);
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+
+    .menu__item__logo__texto{
+        font-size: 1rem;
+    }
+    .menu__item__logo__titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu__item__img{
+        transform:scale(.9);
+    }
+    .menu__izq{
+        gap: 10px;
+        width: 65%;
+    }
+    .menu__der a{
+        padding: 4px 16px;
+        font-size: 1rem;
+    }
+    .splash__container{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .productos__vista__previa{
+        width: 90%;
+        margin: 32px 5%;
+    }
+    .rodapie{
+        width: 90%;
+        margin: 1px 5%;
+    }
+    .rodapie__acerca__lista{
+        transform: translate(-154px, 50px);
+    }
+    .rodapie__acerca{
+        width: 5%;
+    }
+    .rodapie__acerca__lista__item{
+        font-size: 1rem;
+        width: 180px;
+    }
+    .rodapie__contacto{
+        width: 65%;
+    }
+}
+@media screen and (max-width:425px) {
+    .nada{
+        display: none;
+    }
+    .menu__item__busqueda{
+        margin-left: 50px;
+    }
+    .menu__der{
+        position: absolute;
+        left: 190px;
+    }
+    .menu__der a{
+        padding: 4px 8px;
+
+    }
+    .menu__izq{
+        width: 90%;
+    }
+    .splash__titulo{
+        font-size: 1.5rem;
+    }
+    .splash{
+        height: 200px;
+    }
+    .productos__item{
+        width: 45%;
+    }
+   
+    .rodapie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+    }
+    .rodapie__acerca__lista{
+        transform: none;
+        align-items: center;
+    }
+    .rodapie__base{
+        height: 550px;
+    }
+    .rodapie__logo{
+        width: 50%;
+        align-items: normal;
+        justify-content:center;
+    }
+    .rodapie__acerca{
+        width: 50%;
+    }
+    .rodapie__acerca__lista__item{
+        width: auto;
+        text-align: center;
+    }
+    .rodapie__contacto{
+        width: 90%;
+    }
+    .creditos__texto{
+        text-align: center;
+    }
+}
