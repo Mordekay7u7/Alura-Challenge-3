@@ -1,0 +1,101 @@
+.ap__form{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.Login__form__ap{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    height: 400px;
+    margin: 0 35%;
+}
+.ap__form__textarea{
+    max-width: 98%;
+    min-width:97.9% ;
+    max-height: 74px;
+}
+.imglbl{
+    position: absolute;
+    margin:45px 0 0 5px;
+    transition: all 300ms;
+}
+.lbl__cat{
+    position: absolute;
+    margin:103px 0 0 5px;
+    transition: all 300ms;
+}
+.lbl__nompro{
+    position: absolute;
+    margin:158px 0 0 5px;
+    transition: all 300ms;
+}
+.lbl__precio{
+    position: absolute;
+    margin:213px 0 0 5px;
+    transition: all 300ms;
+}
+.lbl__mensaje{
+    position: absolute;
+    margin:263px 0 0 5px;
+    transition: all 300ms;
+}
+.label__ap{
+    font-family: var(--fuente-b);
+    color:var(--gris-texto-c);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+.input__login::placeholder{
+    color: transparent;
+}
+.input__login:not(:placeholder-shown) + .imglbl{
+    font-size: .75rem;
+    margin-top: 37px;
+}
+.input__login:focus + .imglbl{
+    font-size: .74rem;
+    margin-top: 37px;
+}
+.input__login:focus + .lbl__cat{
+    font-size: .74rem;
+    margin-top: 91px;
+}
+.input__login:not(:placeholder-shown) + .lbl__cat{
+    font-size: .74rem;
+    margin-top: 91px;
+}
+.input__login:focus + .lbl__nompro{
+    font-size: .74rem;
+    margin-top: 146px;
+}
+.input__login:not(:placeholder-shown) + .lbl__nompro{
+    font-size: .74rem;
+    margin-top: 146px;
+}
+.input__login:focus + .lbl__precio{
+    font-size: .74rem;
+    margin-top: 201px;
+}
+.input__login:not(:placeholder-shown) + .lbl__precio{
+    font-size: .74rem;
+    margin-top: 201px;
+}
+.input__login:focus + .lbl__mensaje{
+    font-size: .74rem;
+    margin-top: 251px;
+}
+.input__login:not(:placeholder-shown) + .lbl__precio{
+    font-size: .74rem;
+    margin-top: 251px;
+}
+
+@media screen and (max-width:768px) {
+
+    .Login__form__ap{
+        width: 90%;
+        margin: 0 5%;
+    }
+}
