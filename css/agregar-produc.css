@@ -87,7 +87,7 @@
     font-size: .74rem;
     margin-top: 251px;
 }
-.input__login:not(:placeholder-shown) + .lbl__precio{
+.input__login:not(:placeholder-shown) + .lbl__mensaje{
     font-size: .74rem;
     margin-top: 251px;
 }

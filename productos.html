@@ -37,97 +37,21 @@
                             </a>
                         </div>
                 <div class="menu__item__busqueda">
-                    <input class="menu__item__input" placeholder="Hoy quiero..."><i class="fa-solid fa-search"></i>
+                    <input class="menu__item__input" placeholder="Hoy quiero..." data-buscar ><i class="fa-solid fa-search" id="buscar-producto"></i>
                 </div>
                 </div>
-                <div class="nada">  <div>
+                <div class="menu__der"><a  class="menu__a__clean" href="registro.html" id="LoginBtn">Login</a><div>
             <div>
         </header>
         <div class="todos__productos">
             <div class="todos__productos__titulo">
                 <h1 class="todos__productos__titulo__texto">Todos Los Productos</h1>
-                <a class="todos__productos__add" href="agregar-producto.html" >Agregar Producto</a>
+                <a href="agregar-producto.html" class="agregar_productos_hidde">Agregar Productos</a>
             </div>
             <div class="todos__productos__contenedor" >
-                <div class="productos__cartas__tp"> 
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>  
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
+                <div class="productos__cartas__tp" data-productos-todos> 
+                    
+                   
                 </div>
             </div>
         </div>
@@ -171,6 +95,10 @@
             
         </div>
     </div>    
+
+    <script type="module" src="js/verficiar.js"></script>
+    <script type="module" src="js/buscar.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
 

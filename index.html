@@ -35,10 +35,10 @@
                             </a>
                         </div>
                 <div class="menu__item__busqueda">
-                    <input class="menu__item__input" placeholder="Hoy quiero..."><i class="fa-solid fa-search"></i>
+                    <input class="menu__item__input" placeholder="Hoy quiero..." data-buscar><i class="fa-solid fa-search" id="buscar-producto"></i>
                 </div>
                 </div>
-                <div class="menu__der"><a class="menu__a__clean" href="registro.html">Login</a><div>
+                <div class="menu__der"><a class="menu__a__clean" id="LoginBtn" href="registro.html">Login</a><div>
             <div>
         </header>
         <div class="splash">
@@ -49,35 +49,20 @@
                 </div>
             </div>
         </div>
-        <div class="productos__vista__previa">
-            <div class="productos__tema">
-                <div class="productos__seccion__titulo">
-                    <h1 class="productos__titulo">Autos Rosados</h1>
+        <div class="productos__vista__previa" data-vista>
+            <!-- <div  class="productos__tema"> 
+                <div class="productos__seccion__titulo" data-categoria >
+                    <div><h1 class="productos__titulo">XXX</h1></div>
                     <div class="productos__titulo__barra__der">
                         <a class="productos__vermas" href="productos.html">Ver más
                         <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="productos__cartas"> 
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
-                    <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div> <div class="productos__item">
-                        <img src="Img/500x500.png" alt="" class="productos__item__img">
-                        <h2 class="productos__item__titulo">Titulo</h2>
-                        <p class="productos__item__precio">$XX</p>
-                        <a class="productos__item__mas" href="#">Ver más</a>
-                    </div>
+                <div class="productos__cartas" data-producto>
+
                 </div>
-            </div>
+            </div> -->
+            
         </div>
         <div class="rodapie__base">
             <div class="rodapie">
@@ -121,4 +106,9 @@
         </div>
     </div>
 </body>
+<script type="module" src="js/index.js" defer></script>
+<script type="module" src="js/buscar.js" defer></script>
+
+<script type="module" src="js/verficiar.js"></script>
+
 </html>

@@ -1,0 +1,11 @@
+.editar__borrar{
+    color: var(--gris-texto-f);
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    right: 0px;
+}
+
+.editar__borrar__hidde{
+    display: none;
+}

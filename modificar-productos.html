@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/noche.css">
+    <link rel="stylesheet" href="css/todos-prod.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/registro.css">
@@ -44,17 +45,22 @@
                 <div class="nada">  <div>
             <div>
         </header>
-        <div class="Login__form__container" data-form>
-            <form class="Login__form" >
-                <h1 class="login__titulo">Iniciar Sesion</h1>
-                <input class="input__login" type="email" id="correo" placeholder="Escriba su Correo electrónico" required data-correo>
-                <label class="login__label__correo" for="correo">Escriba su Correo electrónico</label>
-                
-                <input class="input__login" type="password" name="contraseña" id="contraseña" placeholder="Esciba su Contraseña" required data-passw>
-                <label class="login__label__constrasena" for="contraseña">Esciba su Contraseña</label>
-            
-                <input class="login__boton" type="submit" value="Enviar" >
-            </form>
+       
+        <div class="todos__productos">
+            <div class="todos__productos__titulo">
+                <h1 class="todos__productos__titulo__texto">Todos Los Productos</h1>
+                <a class="todos__productos__add" href="agregar-producto.html" >Agregar Producto</a>
+            </div>
+            <div class="todos__productos__contenedor" >
+                <div class="productos__cartas__tp"> 
+                    <div class="productos__item">
+                        <img src="Img/500x500.png" alt="" class="productos__item__img">
+                        <h2 class="productos__item__titulo">Titulo</h2>
+                        <p class="productos__item__precio">$XX</p>
+                        <a class="productos__item__mas" href="#">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="rodapie__base">
             <div class="rodapie">
@@ -98,6 +104,6 @@
             
         </div>
     </div>
-    <script type="module" src="js/login.js"></script>
+    <script src="js/test.js"></script>
 </body>
 </html>

@@ -44,20 +44,20 @@
             <div>
         </header>
         <div class="ap__form">
-            <form class="Login__form__ap" >
+            <form class="Login__form__ap" data-form>
                 <h1 class="login__titulo">Agrega un producto</h1>
-                <input class="input__login" type="url" id="imglink" placeholder="URL de imagen" name="url" required>
+                <input class="input__login" type="url" id="imglink" placeholder="URL de imagen" name="url" required data-url>
                 <label class="imglbl label__ap" for="imglink">URL de imagen</label>
 
-                <input class="input__login" type="text" name="Categoria" id="lbl__cat" placeholder="Categoria" required>
+                <input class="input__login" type="text" name="Categoria" id="lbl__cat" placeholder="Categoria" required data-categoria>
                 <label  class="lbl__cat label__ap" for="lbl__cat">Categoria</label>
-                <input class="input__login" type="" name="nomprod" id="nomprod" placeholder="Nombre del producto" required>
+                <input class="input__login" type="" name="nomprod" id="nomprod" placeholder="Nombre del producto" required data-nombre>
                 <label  class="lbl__nompro label__ap" for="nomprod">Nombre del producto</label>
-                <input class="input__login" type="" name="precioprod" id="precio__producto" placeholder="Precio del producto" required>
+                <input class="input__login" type="" name="precioprod" id="precio__producto" placeholder="Precio del producto" required data-precio>
                 <label  class="lbl__precio label__ap" for="precio__producto">Precio del producto</label>
-                <textarea class="ap__form__textarea input__login" id="prodcuto__mensaje" placeholder="descripcion del prodcuto" rows="4"></textarea>
-                <label  class="lbl__mensaje label__ap" for="prodcuto__mensaje">Mensaje</label>
-                <input class="login__boton" type="submit" value="Enviar">
+                <textarea class="ap__form__textarea input__login" id="prodcuto__mensaje" placeholder="descripcion del prodcuto" rows="4" data-descipcion></textarea>
+                <label  class="lbl__mensaje label__ap" for="prodcuto__mensaje">Descripcion</label>
+                <input class="login__boton" type="submit" value="Enviar"  >
             </form>
         </div>
         <div class="rodapie__base">
@@ -100,7 +100,8 @@
             
         </div>
     </div>    
-
+<script type="module" src="js/agregarProd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 

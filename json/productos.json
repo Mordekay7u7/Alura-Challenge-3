@@ -1,0 +1,58 @@
+{
+  "producto": [
+    {
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1121_DP_E.png",
+      "categoria": "Autos de pista",
+      "nombre": "ProtoTy-A Rojo",
+      "precio": "100",
+      "descripcion": "Es un auto",
+      "id": "1"
+    },
+    {
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1121_DP_C.png",
+      "categoria": "Autos de pista",
+      "nombre": "ProtoTy-C Azul",
+      "precio": "100",
+      "descripcion": "Es un auto",
+      "id": "2"
+    },
+    {
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1121_DP_G.png",
+      "categoria": "Autos de pista",
+      "nombre": "ProtoTy-A Naranja",
+      "precio": "100",
+      "descripcion": "Es un auto",
+      "id": "3"
+    },
+    {
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1121_DP_A.png",
+      "categoria": "Autos de pista",
+      "nombre": "ProtoTy-A Aqua",
+      "precio": "100",
+      "descripcion": "Es un auto",
+      "id": "4"
+    },
+    {
+      "nombre": "Monster-Truck",
+      "precio": "500",
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1255_PR_RN.png",
+      "categoria": "MonsterTruck",
+      "descripcion": "wasd",
+      "id": "4b6a3140-a05d-42d2-b82d-0ea8b2426e85"
+    },
+    {
+      "nombre": "R/C Micro Tow Truck",
+      "precio": "700",
+      "url": "https://drivenbybattat.com/wp-content/uploads/WH1133_PR.png",
+      "categoria": "RC",
+      "descripcion": "wasd",
+      "id": "46fb8fa9-43bb-4fec-8884-23b31082fbf5"
+    }
+  ],
+  "usuario": [
+    {
+      "correo": "admin@gmail.com",
+      "contrasena": "Admin"
+    }
+  ]
+}

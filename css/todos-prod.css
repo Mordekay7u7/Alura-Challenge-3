@@ -29,6 +29,35 @@
     justify-content: space-between;
     gap: 20px;
 }
+.editar__borrar{
+    color: var(--gris-texto-f);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    right: 0px;
+    width: 100%;
+}
+.alerta{
+    transition: all 200ms;
+}
+.alerta:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: red;
+}
+.no__link{
+    text-decoration: none;
+    color: var(--gris-texto-f);
+    transition: all 200ms;
+}
+.no__link:hover{
+    color: var(--azul-logo);
+    transform: scale(1.2);
+}
+.editar__borrar__hidde{
+    display: none;
+}
+ 
 
 @media screen and (max-width:768px){
    .productos__cartas__tp{
