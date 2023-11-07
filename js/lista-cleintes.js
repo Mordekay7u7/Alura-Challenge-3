@@ -1,9 +1,9 @@
-const listaClientes = () => fetch("http://localhost:3000/producto").then( respuesta => respuesta.json());
-const listaUsuarios = () => fetch("http://localhost:3000/usuario").then( respuesta => respuesta.json());
+const listaClientes = () => fetch("https://minispeeds-default-rtdb.firebaseio.com/producto").then( respuesta => respuesta.json());
+const listaUsuarios = () => fetch("https://minispeeds-default-rtdb.firebaseio.com/usuario").then( respuesta => respuesta.json());
 
 
 const agregarProductos = (nombre,precio,url,categoria,descripcion)=>{
-    return fetch (`http://localhost:3000/producto`,{
+    return fetch (`https://minispeeds-default-rtdb.firebaseio.com/producto`,{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
@@ -13,18 +13,18 @@ const agregarProductos = (nombre,precio,url,categoria,descripcion)=>{
         .then(respuesta => respuesta).catch(err  =>console.log(err))
 }
 const eliminarProducto = (id)=>{
-    return fetch(`http://localhost:3000/producto/${id}`,{
+    return fetch(`https://minispeeds-default-rtdb.firebaseio.com/${id}`,{
         method:"DELETE"
     })
 }
 
 const detalleProducto = (id) =>{
-    return fetch(`http://localhost:3000/producto/${id}`).then( (respuesta)=>  respuesta.json()
+    return fetch(`https://minispeeds-default-rtdb.firebaseio.com/${id}`).then( (respuesta)=>  respuesta.json()
     )
 }
 
 const modProducto = (url,categoria,nombre,precio,descripcion,id)=>{
-    return fetch (`http://localhost:3000/producto/${id}`,{
+    return fetch (`https://minispeeds-default-rtdb.firebaseio.com/${id}`,{
         method:"PUT",
         headers:{
             "Content-Type": "application/json"
